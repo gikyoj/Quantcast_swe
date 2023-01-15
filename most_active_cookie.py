@@ -55,5 +55,3 @@ if __name__ == "__main__":
     else:
         cur = ActiveCookie(file_name, date, {})
         ret = cur.main()
-
-
