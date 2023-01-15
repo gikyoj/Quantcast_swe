@@ -1,7 +1,7 @@
-# python test_code.py
+# python most_active_cookie.py
 import unittest
 
-from code import ActiveCookie
+from most_active_cookie import ActiveCookie
 
 class TestActiveCookie(unittest.TestCase):
 
@@ -10,7 +10,7 @@ class TestActiveCookie(unittest.TestCase):
         Test on date = '2018-12-07'. 
         One option for most active cookie; 1 most active cookie.
         """
-        file_name = 'log.txt'
+        file_name = 'cookie_log.csv'
         ds = '2018-12-07'
         cur = ActiveCookie(file_name, ds, {})
         ret = cur.main()
@@ -22,7 +22,7 @@ class TestActiveCookie(unittest.TestCase):
         Test on date = '2018-12-08'. 
         Three options for most active cookie; 3 most active cookies.
         """
-        file_name = 'log.txt'
+        file_name = 'cookie_log.csv'
         ds = '2018-12-08'
         cur = ActiveCookie(file_name, ds, {})
         ret = cur.main()
@@ -34,7 +34,7 @@ class TestActiveCookie(unittest.TestCase):
         Test on date = '2018-12-09'. 
         Four options for most active cookie; 1 most active cookie.
         """
-        file_name = 'log.txt'
+        file_name = 'cookie_log.csv'
         ds = '2018-12-09'
         cur = ActiveCookie(file_name, ds, {})
         ret = cur.main()
